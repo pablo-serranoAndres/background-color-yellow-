@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Logo bg:yellow</title>
+        <style>
+            .super {
+                text-align: center;
+                font-style: italic;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: start;
+            }
+            .container { 
+                border-radius: 5px; 
+                padding: 10px; 
+                white-space: nowrap; 
+                overflow: hidden; 
+                width: fit-content; 
+                background: yellow; 
+                clip-path: inset(0 100% 0 0); /* Oculta el contenido al inicio */ 
+                animation: revealText 1.5s ease-out infinite alternate-reverse; } 
+                @keyframes revealText { 
+                    0% { 
+                        clip-path: inset(0 100% 0 0); /* Oculto */ 
+                        }
+                    100% {
+                        clip-path: inset(0 0 0 0); /* Totalmente visible */ 
+                        }
+                        }
+        </style>
+    </head>
+    <body>
+        <div class="super">
+            <span>Developed by</span>
+            <div class="container"><code>background-color: yellow;</code></div>
+        </div>
+    </body>
+</html>
