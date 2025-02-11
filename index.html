@@ -5,12 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
         <title>Logo bg:yellow</title> 
         <style> 
-        .super { 
+        .super {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
             text-align: center; 
-            font-style: italic; 
+            /* font-style: italic;  */
             width: fit-content; 
-            display: flex; 
-            flex-direction: column; 
+            display: flex;
+            gap: 10px; 
+            /* flex-direction: column;  */
             align-items: center; 
             justify-items: start; 
             } 
@@ -19,26 +22,29 @@
             white-space: nowrap; 
             overflow: hidden; 
             width: fit-content; 
-            background: yellow;                 
-            clip-path: inset(0 100% 0 0); /* Oculta el contenido al inicio */ 
+            background: yellow;
+            /* Oculta el contenido al inicio */      
+            /* clip-path: inset(0 100% 0 0);   */
             animation: revealText 1.5s ease-out alternate infinite; 
             } 
-        @keyframes revealText { 
+        /* @keyframes revealText { 
             0% { 
                 clip-path: inset(0 100% 0 0); 
                     } 
             100% { 
                 clip-path: inset(0 0 0 0); 
                     } 
-            } /* Detener animación al hacer hover */ 
+            }  */
             .container:hover {
                 cursor: pointer;
                 animation: none; 
-                clip-path: inset(0 0 0 0); /* Mostrar el contenido completamente */ }
+                clip-path: inset(0 0 0 0);
+                }
             .container:hover {
                 cursor: pointer;
                 animation: none; 
-                clip-path: inset(0 0 0 0); /* Mostrar el contenido completamente */ }  
+                clip-path: inset(0 0 0 0);
+                }  
         </style>
     </head>
     <body>
